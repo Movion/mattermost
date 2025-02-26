@@ -46,6 +46,7 @@ import SaveButton from 'components/save_button';
 import LockIcon from 'components/widgets/icons/lock_icon';
 import LoginGitlabIcon from 'components/widgets/icons/login_gitlab_icon';
 import LoginGoogleIcon from 'components/widgets/icons/login_google_icon';
+import LoginKeycloakIcon from 'components/widgets/icons/login_Keycloak_icon';
 import LoginOffice365Icon from 'components/widgets/icons/login_office_365_icon';
 import LoginOpenIDIcon from 'components/widgets/icons/login_openid_icon';
 import CheckInput from 'components/widgets/inputs/check';
@@ -177,7 +178,7 @@ const Signup = ({onCustomizeHeader}: SignupProps) => {
             externalLoginOptions.push({
                 id: 'gitlab',
                 url,
-                icon: <LoginGitlabIcon/>,
+                icon: <LoginKeycloakIcon/>,
                 label: GitLabButtonText || formatMessage({id: 'login.gitlab', defaultMessage: 'GitLab'}),
                 style: {color: GitLabButtonColor, borderColor: GitLabButtonColor},
                 onClick: desktopExternalAuth(url),
